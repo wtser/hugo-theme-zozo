@@ -690,6 +690,12 @@ a.back_to_top:hover span {
 .disqus {
   max-width: 780px;
   margin: 0 auto;
+  padding: 40px 0;
+}
+@media screen and (min-width: 1600px) {
+  .disqus {
+    max-width: 1000px;
+  }
 }
 
 @media screen and (max-width: 900px) {
