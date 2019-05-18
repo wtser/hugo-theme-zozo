@@ -7,7 +7,8 @@ html {
 
 body {
   color: #333333;
-  font-family: 'source-han-sans-simplified-c', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+  font-family: "source-han-sans-simplified-c", "Source Sans Pro",
+    "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   width: 100%;
   background-color: #f7f7f7;
@@ -25,14 +26,16 @@ a {
   text-decoration: none;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
   opacity: 1;
   -webkit-transition: all 0.15s linear;
   transition: all 0.15s linear;
   color: #424242;
 }
 
-a:hover, a:active {
+a:hover,
+a:active {
   color: #555555;
 }
 
@@ -53,7 +56,7 @@ hr {
 .main {
   background: #ffffff;
   -webkit-box-shadow: 0 10px 20px 0 rgba(236, 236, 236, 0.86);
-          box-shadow: 0 10px 20px 0 rgba(236, 236, 236, 0.86);
+  box-shadow: 0 10px 20px 0 rgba(236, 236, 236, 0.86);
   width: 800px;
   margin: 60px auto 0;
 }
@@ -456,7 +459,7 @@ hr {
 
 .markdown pre,
 .markdown code {
-  font-family: 'Roboto Mono', Menlo, Monaco, courier, monospace;
+  font-family: "Roboto Mono", Menlo, Monaco, courier, monospace;
   font-size: 0.9em;
   background: #f8f8f8 !important;
   border: none;
@@ -515,7 +518,7 @@ hr {
 
 .markdown blockquote {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 2.5em 0;
   padding: 0 0 0 50px;
   font-style: italic;
@@ -524,7 +527,7 @@ hr {
 }
 
 .markdown blockquote:before {
-  content: '“';
+  content: "“";
   display: block;
   font-family: times, sans-serif;
   font-style: normal;
@@ -566,7 +569,7 @@ a.back_to_top {
   font-size: 18px;
   text-align: center;
   -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  transition-duration: 0.5s;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   display: none;
@@ -599,7 +602,7 @@ a.back_to_top:hover span {
     width: 100%;
     background-color: #ffffff;
     -webkit-box-shadow: 0 10px 20px 0 rgba(236, 236, 236, 0.86);
-            box-shadow: 0 10px 20px 0 rgba(236, 236, 236, 0.86);
+    box-shadow: 0 10px 20px 0 rgba(236, 236, 236, 0.86);
   }
   .nav_container .site_nav ul {
     float: none;
@@ -675,12 +678,23 @@ a.back_to_top:hover span {
   0% {
     opacity: 0;
     -webkit-transform: translateY(-3px);
-            transform: translateY(-3px);
+    transform: translateY(-3px);
   }
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.disqus {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 900px) {
+  .disqus {
+    width: 95%;
   }
 }
 
